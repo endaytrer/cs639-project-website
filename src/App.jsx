@@ -31,25 +31,25 @@ function App() {
   }
   return (
     <div className="App bg-gray-900">
-      <div className='header relative h-screen w-full flex flex-col justify-end'>
-        <div className="top-img absolute top-0 h-full w-full select-none" onMouseMove={setWidth}>
+      <div className='header relative w-full flex flex-col justify-end'>
+        <div className="top-img absolute top-0 h-full w-full select-none" onMouseMove={setWidth} onTouchMove={setWidth}>
           <div className="compare-img before-img absolute bg-left-top h-full bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${imgBefore})`, width: `calc(${(compareWidth * 100)}% - ${sliderWidth / 2}px)`}}>
             <span className="absolute mx-4 top-4 px-3 py-1 rounded-2xl z-50 text-base uppercase font-semibold text-gray-500 bg-white drop-shadow-lg">Before</span>
           </div>
-          <div className="compare-slider absolute h-full cursor-ew-resize bg-slate-200 top-0 z-20 drop-shadow-lg flex flex-col justify-center items-center" style={{width: `${sliderWidth}px`, backgroundImage: `linear-gradient(transparent, rgb(17, 24, 39))`, left: `calc(${(compareWidth * 100)}% - ${sliderWidth / 2}px)`}} onMouseDown={startSetWidth} onMouseUp={endSetWidth}></div>
+          <div className="compare-slider absolute h-full cursor-ew-resize bg-slate-200 top-0 z-20 drop-shadow-lg flex flex-col justify-center items-center" style={{width: `${sliderWidth}px`, backgroundImage: `linear-gradient(transparent, rgb(17, 24, 39))`, left: `calc(${(compareWidth * 100)}% - ${sliderWidth / 2}px)`}} onMouseDown={startSetWidth} onMouseUp={endSetWidth} onTouchStart={startSetWidth} onTouchEnd={endSetWidth}></div>
           <div className="compare-img absolute bg-cover bg-right-top h-full text-right bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${imgAfter})`, left: `calc(${(compareWidth * 100)}% + ${sliderWidth / 2}px)`,width: `calc(${((1 - compareWidth) * 100)}% - ${sliderWidth / 2}px)`}}>
             <span className="absolute mx-4 top-4 right-0 px-3 py-1 rounded-2xl z-50 text-base uppercase font-semibold text-green-600 bg-white drop-shadow-lg">After</span>
           </div>
           <div className="mask absolute z-10 w-full h-full" style={{backgroundImage: `linear-gradient(transparent, rgb(17, 24, 39))`}}></div>
         </div>
-        <div className="title relative bottom-0 h-2/5 w-full z-20 flex flex-col"  onMouseMove={setWidth}>
-          <h1 className="text-5xl ml-10 text-white my-5"><span className="border-b-4 border-blue-600">Photo and Video <b>Anonymization</b></span></h1>
-          <h3 className="text-2xl ml-10 text-gray-300">Yibo Kong, Daniel Gu</h3>
-          <div className="link-list flex items-center justify-around lg:w-full mt-12 flex-wrap self-center">
+        <div className="title relative bottom-0 h-48 sm:h-2/5 w-full z-20 flex flex-col px-4 lg:px-24 xl:px-48" onMouseMove={setWidth} onTouchMove={setWidth}>
+          <h1 className="text-4xl md:text-5xl text-white my-5"><span className="border-b-4 border-blue-600">Photo and Video <b>Anonymization</b></span></h1>
+          <h3 className="text-xl md:text-2xl text-gray-300">Yibo Kong, Daniel Gu</h3>
+          <div className="link-list flex items-center justify-between sm:justify-around lg:w-full mt-10 sm:mt-8 flex-wrap self-center">
             <IconLink icon={backgroundIcon} name="Background" refer="background" />
             <IconLink icon={goalIcon} name="Goal" refer="goal" />
             <IconLink icon={currentIcon} name="Current Work" refer="current" />
-            <IconLink icon={techIcon} name="Tech Approach" refer="tech" />
+            <IconLink icon={techIcon} name="Details" refer="tech" />
             <IconLink icon={problemIcon} name="Problems" refer="problem" />
             <IconLink icon={futureIcon} name="Future" refer="future" />
             <IconLink icon={contactIcon} name="Contact Us" refer="contact" />
@@ -57,7 +57,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="main py-10 px-4 lg:px-24 xl:px-48">
+      <div className="main py-2 sm:py-10 px-4 lg:px-24 xl:px-48">
         <h1 id="background">Background and Motivation</h1>
         <p>In the era of information technology, people's privacy has become more vulnerable to leakage. People's faces, license plates, and other private information are often inadvertently recorded on other people's videos and viewed by thousands of viewers. These seemingly innocuous records can be easily investigated for more detailed personal data if used by malicious people. </p>
         <p>When watching videos, we always see some passersby or passing cars filmed and recorded. Many people don't see this as a problem because no one pays attention to a passerby, and the video makers don't have the energy or ability to question everyone caught on camera. But in fact, just through the license plate, people with relevant knowledge can get the background information of the car owners, including their home addresses. And people's portrait rights should also be respected and protected. Compared to looking at license plates and passersby in reality, video as a way of recording is more easily exploited by malicious people.</p>
@@ -89,7 +89,7 @@ function App() {
           <li>Train better models to improve the precision of the program.</li>
         </ul>
         <h1 id="contact">Contact Us</h1>
-        <div className="contact-conainer flex justify-center items-center mt-10">
+        <div className="contact-container flex flex-col sm:flex-row justify-center items-center mt-10 h-fit">
           <Contact name="Yibo Kong" email="ykong42@wisc.edu" github="YiboK" avatarUrl="https://avatars.githubusercontent.com/u/94937314?v=4"/>
           <Contact name="Daniel Gu" email="zgu98@wisc.edu" github="endaytrer" avatarUrl="https://avatars.githubusercontent.com/u/49216312?v=4"/>
         </div>

@@ -1,5 +1,6 @@
 .header {
-  height: 600px;
+  min-height: 600px;
+  height: 66.7vh;
 }
 @media (min-width: 640px) {
   .header {

@@ -1,38 +1,85 @@
-.App {
+.header>.top-img {
+  max-height: 66.7vw;
+}
+.compare-img {
+  background-size: 100vw;
+}
+.compare-slider::after {
+  font-weight: bold;
+  content: "||";
   text-align: center;
+  color: gray;
+  position: absolute;
+  top: 30%;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgb(210, 220, 230);
 }
+.link-list {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 100%;
+  max-width: 550px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1024px) {
+  .link-list {
+    max-width: unset;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon-link:img {
+  filter:brightness(1);
+}
+.icon-link:hover>img {
+  filter:brightness(1.2);
+}
+.icon-link:hover>h3 {
+  font-weight: semibold;
+  color:rgb(235, 245, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  color:rgb(236, 236, 236);
 }
+.main>h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  border-bottom-width: 2px;
+  border-color: rgb(96 165 250);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-top: 5rem;
+  color:white;
+}
+.main>h2 {
+  font-size: 1.3rem/* 30px */;
+  line-height: 1.75rem/* 36px */;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color:rgb(96 165 250);
+
+  border-bottom-width: 1px;
+  border-color: rgb(55, 65, 81);
+  margin-top: 2rem;
+}
+.main>h3 {
+  font-size: 1.2rem/* 30px */;
+  line-height: 1.3rem/* 36px */;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+.main>p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+.main>ul {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+.main>ul>li {
+  list-style-type: disc;
+  margin: 8px 0 8px 18px;
+}
+#references {
+  color:rgb(156, 163, 175);
 }

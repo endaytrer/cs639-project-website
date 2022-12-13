@@ -96,7 +96,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="main py-2 sm:py-10 px-4 lg:px-36 xl:px-72">
+      <div className="main py-2 sm:py-10 px-4 lg:px-36 xl:px-72 overflow-hidden">
         <h1 id="background">Background and Motivation</h1>
         <p>In the era of information technology, people's privacy has become more vulnerable to leakage. People's faces, license plates, and other private information are often inadvertently recorded on other people's videos and viewed by thousands of viewers. These seemingly innocuous records can be easily investigated for more detailed personal data if used by malicious people. </p>
         <p>When watching videos, we always see some passersby or passing cars filmed and recorded. Many people don't see this as a problem because no one pays attention to a passerby, and the video makers don't have the energy or ability to question everyone caught on camera. But in fact, just through the license plate, people with relevant knowledge can get the background information of the car owners, including their home addresses. And people's portrait rights should also be respected and protected. Compared to looking at license plates and passersby in reality, video as a way of recording is more easily exploited by malicious people.</p>

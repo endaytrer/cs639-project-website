@@ -19,11 +19,19 @@
   text-align: center;
   color: gray;
   position: absolute;
-  top: 30%;
+  top: 50%;
   width: 28px;
   height: 28px;
   border-radius: 50%;
   background-color: rgb(210, 220, 230);
+}
+.title,
+.mask {
+  transition: opacity 200ms ease-out;
+}
+.mask.transparent,
+.title.transparent {
+  opacity: 0;
 }
 .link-list {
 

@@ -13,7 +13,7 @@ export class Citation {
   references() {
     return <ul>
       {this.citations.map((val, idx) => (
-        <li key={idx} className=" text-gray-400 text-sm">[{idx + 1}] {val}</li>
+        <li id={`r${idx + 1}`} key={idx} className=" text-gray-400 text-sm">[{idx + 1}] {val}</li>
       ))}
     </ul>
   }

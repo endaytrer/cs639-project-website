@@ -63,7 +63,7 @@ function App() {
   return (
     <div className="App bg-gray-900">
       <div className='header relative w-full flex flex-col justify-end'>
-        <div className="top-img absolute top-0 h-full w-full select-none" onMouseMove={setWidth} onTouchMove={setWidth}>
+        <div className="top-img absolute top-0 h-full w-full select-none" onMouseMove={setWidth} onMouseUp={endSetWidth}>
           <div className="compare-img before-img absolute bg-left-top h-full bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${images[imgIndex][0]})`, width: `calc(${(compareWidth * 100)}% - ${sliderWidth / 2}px)`}}>
             <div className="absolute mx-4 top-4 px-3 min-w-fit py-1 rounded-2xl z-50 text-base uppercase font-semibold text-gray-500 bg-white bg-opacity-60 drop-shadow-lg">
               <select className="mr-2" value={imgIndex} onChange={(e) => setImgIndex(e.target.value)}>
@@ -73,13 +73,13 @@ function App() {
                 <option value="3">Crowds</option>
               </select><div>Before</div></div>
           </div>
-          <div className="compare-slider absolute h-full cursor-ew-resize bg-slate-200 top-0 z-20 drop-shadow-lg flex flex-col justify-center items-center" style={{width: `${sliderWidth}px`, backgroundImage: `linear-gradient(transparent, rgb(17, 24, 39))`, left: `calc(${(compareWidth * 100)}% - ${sliderWidth / 2}px)`}} onMouseDown={startSetWidth} onMouseUp={endSetWidth} onTouchStart={startSetWidth} onTouchEnd={endSetWidth}></div>
-          <div className="compare-img absolute bg-cover bg-right-top h-full text-right bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${images[imgIndex][1]})`, left: `calc(${(compareWidth * 100)}% + ${sliderWidth / 2}px)`,width: `calc(${((1 - compareWidth) * 100)}% - ${sliderWidth / 2}px)`}}>
+          <div className="compare-slider absolute h-full cursor-ew-resize bg-slate-200 top-0 z-20 drop-shadow-lg flex flex-col justify-center items-center" style={{width: `${sliderWidth}px`, backgroundImage: "linear-gradient(transparent, rgb(17, 24, 39))", left: `calc(${(compareWidth * 100)}% - ${sliderWidth / 2}px)`}} onMouseDown={startSetWidth} onMouseUp={endSetWidth}></div>
+          <div className="compare-img absolute bg-cover bg-right-top h-full text-right bg-no-repeat overflow-hidden" style={{ backgroundImage: `url(${images[imgIndex][1]})`, left: `calc(${(compareWidth * 100)}% + ${sliderWidth / 2}px)`, width: `calc(${((1 - compareWidth) * 100)}% - ${sliderWidth / 2}px)`}}>
             <div className="absolute mx-4 top-4 right-0 px-3 py-1 rounded-2xl z-50 text-base uppercase font-semibold text-green-600 bg-white bg-opacity-60 drop-shadow-lg">After</div>
           </div>
-          <div className="mask absolute z-10 w-full h-full" style={{backgroundImage: `linear-gradient(transparent, rgb(17, 24, 39))`}}></div>
+          <div className={`mask absolute z-10 w-full h-full ${isSliding && "transparent"}`} style={{backgroundImage: `linear-gradient(transparent, rgb(17, 24, 39))`}}></div>
         </div>
-        <div className="title relative bottom-0 h-48 sm:h-2/5 w-full z-20 flex flex-col px-4 lg:px-24 xl:px-48" onMouseMove={setWidth} onTouchMove={setWidth}>
+        <div className={`title relative bottom-0 h-48 sm:h-2/5 w-full z-20 flex flex-col px-4 lg:px-24 xl:px-48  ${isSliding && "transparent"}`} onMouseMove={setWidth} onMouseUp={endSetWidth}>
           <div className="max-w-fit self-center">
             <h1 className="text-4xl md:text-5xl text-white my-5"><span className="border-b-4 border-blue-600">Photo and Video <b>Anonymization</b></span></h1>
             <h3 className="text-xl md:text-2xl text-gray-300 flex items-center justify-between"><a className="text-lg text-gray-400 flex items-center" href="https://github.com/YiboK/CS639_Photo_Video_Anonymization"><img src={githubIcon} alt="github logo" className="w-5 inline-block mr-1"></img>GitHub Repository</a>Yibo Kong, Daniel Gu</h3>
@@ -163,7 +163,15 @@ function App() {
         <h1 id="ref">References</h1>
         {ct.references()}
       </div>
+      <div className="footer py-2 sm:py-10 px-4 lg:px-36 xl:px-72 bg-zinc-900">
+        <div className="text-gray-600 text-sm">
+          <p>The website is open source in GitHub: <a className="underline" href="https://github.com/endaytrer/cs639-project-website">endaytrer/cs639-project-website</a>.</p>
+          <p>Powered by React.js and Netlify.</p>
+          </div>
+        
+      </div>
     </div>
+    
   );
 }
 

@@ -20,6 +20,7 @@ import refIcon from "./assets/icons/ref.svg"
 import blurDegImg from "./assets/mainImages/blur-deg.jpg"
 import introImg from "./assets/mainImages/intro.jpg"
 import v5Img from "./assets/mainImages/YOLOv5.png"
+import diffObjImg from "./assets/mainImages/reult_diff_obj.png"
 import v5faceImg from "./assets/mainImages/YOLOv5Face.png"
 import originalImg from "./assets/mainImages/original.jpg"
 import resultImg from "./assets/mainImages/Results.jpg"
@@ -31,6 +32,7 @@ import bentley2Img from "./assets/mainImages/Bentley2.jpg"
 import cars1Img from "./assets/mainImages/cars1.jpg"
 import cars2Img from "./assets/mainImages/cars2.jpg"
 import modelImg from "./assets/mainImages/diagram.svg"
+
 
 import { useState } from 'react';
 import { IconLink } from './IconLink';
@@ -146,7 +148,12 @@ function App() {
         <p>Thanks to the high performance of our model, the result of mass groups of people is also significant.</p>
         {cg.instantiate([large1Img], "The result of a large group of people 1")}
         {cg.instantiate([large2Img], "The result of a large group of people 2")}
-        
+
+        <h1 id="result">Final Result</h1>
+        <p>Here are the final results of our program.</p>
+        <p>Users can select the objects to be blurred according to their requirements.</p>
+        {cg.instantiate([diffObjImg], "Different options for our program")}
+
         <h1 id="problem">Problems We Encountered</h1>
         <p>Training models with YOLO-v5 is very time consuming. In the absence of a professional or high-end GPU we used Google Colab for remote GPU training. However, Google Colab has a limit of computational units, resulting in only 100 epochs for our model training (300 is recommended). And at the end of training, mAP still has an increasing trend. We believe that more epochs will improve the accuracy of our model. </p>
         <h1 id="future">Future Work</h1>
@@ -154,6 +161,7 @@ function App() {
           <li>Our program does not blur other objects and expects a future update to implement this feature.</li>
           <li>In some cases, users do not necessarily want to blur all the people in the video, such as journalists, interviewees or bloggers themselves. Therefore, a useful feature is to prevent blurring the selected people.</li>
           <li>Train better models to improve the precision of the program.</li>
+          <li>Develop user-friendly programs. Currently our program requires users to upload photos and set parameters in Google Colab by themselves. We hope to develop an easy-to-use website application in the future</li>
         </ul>
         <h1 id="contact">Contact Us</h1>
         <div className="contact-container flex flex-col sm:flex-row justify-center items-center mt-10 h-fit">

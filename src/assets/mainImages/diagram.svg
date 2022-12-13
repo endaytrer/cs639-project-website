@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1080px" viewBox="0 0 1440 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Slide 4:3@1x</title>
+    <g id="Slide-4:3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="151" y="142" width="398" height="32"></rect>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="180" y="226" width="340" height="46"></rect>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="216" y="325" width="268" height="59"></rect>
+        <path id="Line" d="M351.5,173.5 L351.5,211.5 L357.5,211.5 L350.5,225.5 L343.5,211.5 L349.5,211.5 L349.5,173.5 L351.5,173.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line" d="M135.425545,150.650934 L149.5,157.5 L135.576074,164.650124 L135.511,158.65 L103.010752,158.999942 L102.01081,159.010694 L101.989306,157.01081 L102.989248,157.000058 L135.49,156.65 L135.425545,150.650934 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line" d="M135.425545,150.650934 L149.5,157.5 L135.576074,164.650124 L135.511,158.65 L103.010752,158.999942 L102.01081,159.010694 L101.989306,157.01081 L102.989248,157.000058 L135.49,156.65 L135.425545,150.650934 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line" d="M351.5,271.5 L351.5,309.5 L357.5,309.5 L350.5,323.5 L343.5,309.5 L349.5,309.5 L349.5,271.5 L351.5,271.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <text id="Conv" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="289.16" y="206">Conv</tspan>
+        </text>
+        <text id="Input" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="47" y="165">Input</tspan>
+        </text>
+        <text id="Output" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="1360" y="460">Output</tspan>
+        </text>
+        <text id="m,-n,-3" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="319.53" y="165">m, n, 3</tspan>
+        </text>
+        <text id="Conv" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="289.16" y="303">Conv</tspan>
+        </text>
+        <path id="Line" d="M351.5,383.5 L351.5,421.5 L357.5,421.5 L350.5,435.5 L343.5,421.5 L349.5,421.5 L349.5,383.5 L351.5,383.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <text id="Conv,-Bottleneck" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="181.18" y="415">Conv, Bottleneck</tspan>
+        </text>
+        <path id="Line" d="M350.5,512.5 L350.5,550.5 L356.5,550.5 L349.5,564.5 L342.5,550.5 L348.5,550.5 L348.5,512.5 L350.5,512.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <text id="Conv,-Bottleneck" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="181.18" y="545">Conv, Bottleneck</tspan>
+        </text>
+        <text id="(m,-n)/2,-64" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="298.4" y="256">(m, n)/2, 64</tspan>
+        </text>
+        <text id="(m,-n)/4,-128" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="293.74" y="362">(m, n)/4, 128</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="252" y="435" width="196" height="77"></rect>
+        <text id="(m,-n)/8,-256" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="292.74" y="481">(m, n)/8, 256</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="275" y="565" width="152" height="95"></rect>
+        <text id="(m,-n)/16,-512" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="288.08" y="620">(m, n)/16, 512</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="985" y="565" width="152" height="95"></rect>
+        <text id="(m,-n)/16,-512" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="998.08" y="620">(m, n)/16, 512</tspan>
+        </text>
+        <text id="(m,-n)/16,-512" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="998.08" y="620">(m, n)/16, 512</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="593" y="566" width="152" height="95"></rect>
+        <text id="(m,-n)/8,-256" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="611.74" y="621">(m, n)/8, 256</tspan>
+        </text>
+        <path id="Line" d="M351.5,659.5 L351.5,697.5 L357.5,697.5 L350.5,711.5 L343.5,697.5 L349.5,697.5 L349.5,659.5 L351.5,659.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line" d="M681.5,663.5 L688.64395,677.427095 L682.643,677.489 L682.999947,711.989691 L683.010256,712.989638 L681.010362,713.010256 L681.000053,712.010309 L680.644,677.509 L674.644694,677.571417 L681.5,663.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <text id="Conv,-Bottleneck" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="181.18" y="695">Conv, Bottleneck</tspan>
+        </text>
+        <path id="Line" d="M1062.5,658.5 L1062.5,696.5 L1068.5,696.5 L1061.5,710.5 L1054.5,696.5 L1060.5,696.5 L1060.5,658.5 L1062.5,658.5 Z" fill="#979797" fill-rule="nonzero"></path>
+        <text id="Conv,-Bottleneck" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="1074" y="682">Conv,</tspan>
+            <tspan x="1074" y="705">Bottleneck</tspan>
+        </text>
+        <text id="Concat" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="526" y="714">Concat</tspan>
+        </text>
+        <text id="Concat" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="533" y="827">Concat</tspan>
+        </text>
+        <text id="Conv,-UpSample" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="695" y="699">Conv, UpSample</tspan>
+        </text>
+        <text id="Conv,-Bottleneck" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="795" y="509">Conv, Bottleneck</tspan>
+        </text>
+        <text id="Concat" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="558" y="509">Concat</tspan>
+        </text>
+        <text id="Conv,-UpSample" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="575" y="876">Conv, UpSample</tspan>
+        </text>
+        <text id="Concat" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="917" y="700">Concat</tspan>
+        </text>
+        <text id="Spatial-Pyramid-Pool" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#FFFFFF">
+            <tspan x="175" y="865">Spatial Pyramid Pooling</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="294" y="712" width="116" height="95"></rect>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="450" y="885" width="116" height="95"></rect>
+        <text id="(m,-n)/32,-1024" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="308.94" y="755">(m, n)/32,</tspan>
+            <tspan x="329.36" y="778">1024</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="1003" y="712" width="116" height="95"></rect>
+        <text id="(m,-n)/32,-1024" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="1017.94" y="755">(m, n)/32,</tspan>
+            <tspan x="1038.36" y="778">1024</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="1231" y="430" width="116" height="95" rx="24"></rect>
+        <text id="Detect" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="1258.95" y="485">Detect</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" stroke-width="2" fill="#D8D8D8" x="611" y="713" width="116" height="95"></rect>
+        <text id="(m,-n)/16,-512" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="625.94" y="756">(m, n)/16,</tspan>
+            <tspan x="652.02" y="779">512</tspan>
+        </text>
+        <text id="k-x-l,-1024" font-family="HelveticaNeue, Helvetica Neue" font-size="20" font-weight="normal" letter-spacing="0.2" fill="#000000">
+            <tspan x="486.47" y="927">k x l,</tspan>
+            <tspan x="485.36" y="950">1024</tspan>
+        </text>
+        <path id="Path" d="M352.993763,807.888483 C355.372462,829.085798 365.729293,839.630815 384.278164,839.839595 L384.842759,839.842759 L464.5,839.842759 C484.794553,839.842759 495.295297,849.968278 495.675222,869.895799 L501.685762,869.896907 L494.685917,883.896984 L487.685762,869.897062 L493.674962,869.896607 C493.311181,851.277944 483.88588,842.03188 465.082898,841.845631 L464.5,841.842759 L384.842759,841.842759 C365.069588,841.842759 353.745442,830.716343 351.084228,808.779576 L351.006237,808.111517 L352.993763,807.888483 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Path" d="M526.719228,807.859999 C529.10123,829.086736 539.472657,839.64661 558.047419,839.855685 L558.612802,839.858852 L638.378163,839.858852 C658.706178,839.858852 669.220691,850.004133 669.594707,869.970727 L675.604936,869.971458 L668.605052,883.971516 L661.604936,869.971574 L667.594456,869.971293 C667.236296,851.313806 657.797544,842.048362 638.962044,841.86173 L638.378163,841.858852 L558.612802,841.858852 C538.813512,841.858852 527.474541,830.717874 524.809798,808.751979 L524.731703,808.083033 L526.719228,807.859999 Z" transform="translate(597.165259, 845.971516) scale(1, -1) translate(-597.165259, -845.971516) " fill="#979797" fill-rule="nonzero"></path>
+        <path id="Path-2" d="M428.012499,611.500078 L475.424967,612.092734 C493.849339,612.323039 508.700344,627.176583 508.995522,645.532769 L509,646.090078 L509,654.5 C509,671.996381 523.041783,686.213128 540.470821,686.495713 L541,686.5 L643.5,686.5 C651.973137,686.5 659.68701,682.16291 664.144634,675.199214 L658.668594,673.758488 L669,662 L672.207947,677.320218 L666.168978,675.732127 C661.48384,683.45488 653.156193,688.341171 643.951618,688.496199 L643.5,688.5 L541,688.5 C522.410095,688.5 507.304802,673.580606 507.004555,655.062252 L507,654.5 L507,646.090078 C507,628.748137 493.19599,614.597079 475.924401,614.103348 L475.399969,614.092578 L427.987501,613.499922 L428.012499,611.500078 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Path-2" d="M412.012428,757.500077 L460.418391,758.101697 C478.843716,758.330698 493.696166,773.184623 493.991372,791.541734 L493.995851,792.099071 L493.995851,801 C493.995851,818.496381 508.037634,832.713128 525.466672,832.995713 L525.995851,833 L630.33,833 C638.896546,833 646.691156,828.59712 651.170277,821.538667 L645.68993,820.107201 L656,808.33 L659.235719,823.644376 L653.194229,822.067801 C648.488838,829.887501 640.079092,834.84149 630.779112,834.996264 L630.33,835 L525.995851,835 C507.405946,835 492.300653,820.080606 492.000406,801.562252 L491.995851,801 L491.995851,792.099071 C491.995851,774.756249 478.190489,760.604812 460.917995,760.112276 L460.393536,760.101542 L411.987572,759.499923 L412.012428,757.500077 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Path-3" d="M1031.60505,525 C1046.71162,525 1059.36806,536.217691 1061.33945,550.990898 L1067.44145,550.919388 L1060.60505,565 L1053.4424,551.082513 L1059.32378,551.014471 C1057.39908,537.488577 1045.8621,527.212868 1032.03611,527.003266 L1031.60505,527 L697.732266,527 C682.564845,527 670.185589,539.068113 669.744385,554.173784 L669.734678,554.632452 L669.604966,564.513127 L667.605139,564.486873 L667.734851,554.606198 C667.94817,538.356791 681.051284,525.264175 697.240742,525.003948 L697.732266,525 L1031.60505,525 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path d="M470.394251,613.5 L478.797468,613.276544 C495.049649,612.844372 508,599.545071 508,583.287145 L508,556 C508,539.431458 521.431458,526 538,526 L695,526 L695,526" id="Path-4" stroke="#979797" stroke-width="2"></path>
+        <path d="M616.605052,834 L835.29631,834 C847.998859,834 858.29631,823.702549 858.29631,811 L858.29631,703 C858.29631,690.297451 868.59376,680 881.29631,680 L1037.60505,680 C1050.3076,680 1060.60505,690.297451 1060.60505,703 L1060.60505,703.822714 L1060.60505,703.822714" id="Path-5" stroke="#979797" stroke-width="2"></path>
+        <path id="Path-6" d="M1215,445.99001 L1229,452.99001 L1215,459.99001 L1215,453.99 L679,453.99001 C666.971238,453.99001 657.197225,463.643736 657.002947,475.6262 L657,475.99001 L657,563.5 L655,563.5 L655,475.99001 C655,462.867725 665.531337,452.205165 678.603116,451.993226 L679,451.99001 L1215,451.99 L1215,445.99001 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Path-7" d="M1215,471.887122 L1229,478.887122 L1215,485.887122 L1215,479.887 L1206.4458,479.887122 C1193.87028,479.887122 1183.65199,489.979653 1183.44888,502.506775 L1183.4458,502.887122 L1183.4458,588.5 C1183.4458,602.169048 1172.47566,613.275881 1158.85922,613.496651 L1158.4458,613.5 L1138,613.5 L1138,611.5 L1158.4458,611.5 C1171.02132,611.5 1181.23961,601.407469 1181.44272,588.880347 L1181.4458,588.5 L1181.4458,502.887122 C1181.4458,489.218074 1192.41594,478.111241 1206.03238,477.890471 L1206.4458,477.887122 L1215,477.887 L1215,471.887122 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Path-7" d="M1214.98327,501.53356 L1229,508.5 L1215.01681,515.53352 L1215.00204,509.60711 C1203.42986,510.721618 1194.42441,520.390562 1194.24016,532.13279 L1194.23728,532.5 L1194.23728,749.5 C1194.23728,763.169048 1183.26714,774.275881 1169.6507,774.496651 L1169.23728,774.5 L1120,774.5 L1120,772.5 L1169.23728,772.5 C1181.8128,772.5 1192.03109,762.407469 1192.2342,749.880347 L1192.23728,749.5 L1192.23728,532.5 C1192.23728,519.49333 1202.19528,508.735107 1214.99705,507.599016 L1214.98327,501.53356 Z" fill="#979797" fill-rule="nonzero"></path>
+        <path id="Line" d="M1380.42554,469.650934 L1394.5,476.5 L1380.57607,483.650124 L1380.511,477.65 L1348.01075,477.999942 L1347.01081,478.010694 L1346.98931,476.01081 L1347.98925,476.000058 L1380.49,475.65 L1380.42554,469.650934 Z" fill="#979797" fill-rule="nonzero"></path>
+    </g>
+</svg>

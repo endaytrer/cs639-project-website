@@ -32,7 +32,7 @@ import bentley2Img from "./assets/mainImages/Bentley2.jpg"
 import cars1Img from "./assets/mainImages/cars1.jpg"
 import cars2Img from "./assets/mainImages/cars2.jpg"
 import modelImg from "./assets/mainImages/diagram.svg"
-
+import resultVid from "./assets/mainImages/Greece.webm"
 
 import { useState } from 'react';
 import { IconLink } from './IconLink';
@@ -42,6 +42,8 @@ import { CaptionGenerator } from './CaptionImg';
 import { Citation } from './Citation';
 
 const images = [[img1before, img1after], [img2before, img2after], [cars1Img, cars2Img], [img3before, img3after]]
+
+
 function App() {
   const sliderWidth = 8;
   const cg = new CaptionGenerator();
@@ -153,6 +155,8 @@ function App() {
         <p>Here are the final results of our program.</p>
         <p>Users can select the objects to be blurred according to their requirements.</p>
         {cg.instantiate([diffObjImg], "Different options for our program")}
+        <p>Our program also has good performance for video input.</p>
+        <video src={resultVid} type="video/mp4" controls />
 
         <h1 id="problem">Problems We Encountered</h1>
         <p>Training models with YOLO-v5 is very time consuming. In the absence of a professional or high-end GPU we used Google Colab for remote GPU training. However, Google Colab has a limit of computational units, resulting in only 100 epochs for our model training (300 is recommended). And at the end of training, mAP still has an increasing trend. We believe that more epochs will improve the accuracy of our model. </p>
